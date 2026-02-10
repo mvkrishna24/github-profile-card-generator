@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Profile Card Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+</head>
+<body>
+    <!-- HEADER SECTION -->
+    <header class="header">
+        <div class="container">
+            <h1>GitHub Profile Card Generator</h1>
+            <p>Create beautiful profile cards for any GitHub user</p>
+        </div>
+    </header>
+    <!-- SEARCH SECTION -->
+    <main class="main">
+        <div class="container">
+            
+            <section class="search-section">
+                <div class="search-box">
+                    <input 
+                        type="text" 
+                        id="username-input" 
+                        placeholder="Enter GitHub username (e.g., torvalds)"
+                    >
+                    <button id="generate-btn" class="btn-primary">
+                        Generate Card
+                    </button>
+                </div>
+                <p class="error-message" id="error-message"></p>
+            </section>
+
+        </div>
+    </main>
+    <!-- LOADING SPINNER -->
+            <div class="loading" id="loading">
+                <div class="spinner"></div>
+                <p>Fetching profile data...</p>
+            </div>
+            <!-- PROFILE CARD (Will be filled by JavaScript) -->
+            <section class="profile-card" id="profile-card">
+                <!-- JavaScript will put content here -->
+            </section>
+            <!-- THEME TOGGLE -->
+            <div class="theme-toggle">
+                <button id="theme-btn">
+                    <span id="theme-icon">🌙</span>
+                    <span id="theme-text">Dark Mode</span>
+                </button>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>
