@@ -21,7 +21,6 @@ A beautiful, responsive web application that generates elegant profile cards for
 **[View Live Demo](https://mvkrishna24.github.io/github-profile-card-generator/)**
 
 
-
 ## 📸 Screenshots
 
 ## 📸 Screenshots
