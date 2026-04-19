@@ -208,6 +208,35 @@ body {
     border-color: var(--accent);
     transform: translateY(-2px);
 }
+/* RECENT SEARCHES */
+.recent-searches {
+    margin-top: 20px;
+}
+
+.recent-searches h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+#recent-list {
+    list-style: none;
+    padding: 0;
+}
+
+#recent-list li {
+    background: var(--bg-secondary);
+    padding: 8px 12px;
+    margin-bottom: 6px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: 1px solid var(--border);
+    transition: all 0.2s ease;
+}
+
+#recent-list li:hover {
+    background: var(--accent);
+    color: white;
+}
 
 /* ==========================================
    FOOTER
