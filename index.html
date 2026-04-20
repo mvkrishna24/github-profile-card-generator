@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- META -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Generate beautiful GitHub profile cards using live GitHub API data. Built with Vanilla JavaScript.">
+    <meta name="description"
+        content="Generate beautiful GitHub profile cards using live GitHub API data. Built with Vanilla JavaScript.">
+
     <title>GitHub Profile Card Generator</title>
+
+    <!-- STYLES -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- FAVICON -->
     <link rel="icon" href="assets/favicon.ico">
 </head>
+
 <body>
-    <!-- HEADER SECTION -->
+
+    <!-- ================= HEADER ================= -->
     <header class="header">
         <div class="container">
             <h1>GitHub Profile Card Generator</h1>
@@ -17,19 +27,18 @@
         </div>
     </header>
 
-    <!-- MAIN CONTENT -->
+    <!-- ================= MAIN ================= -->
     <main class="main">
         <div class="container">
-            
-            <!-- SEARCH SECTION -->
+
+            <!-- ========= SEARCH ========= -->
             <section class="search-section">
                 <div class="search-box">
                     <input 
                         type="text" 
                         id="username-input" 
-            
                         placeholder="Enter GitHub username (e.g., torvalds)"
-                        
+                        autocomplete="off"
                     >
                     <button id="generate-btn" class="btn-primary">
                         Generate Card
@@ -37,24 +46,36 @@
                 </div>
                 <p class="error-message" id="error-message"></p>
             </section>
-            <!-- RECENT SEARCHES -->
-<div class="recent-searches" id="recent-searches">
-    <h3>Recent Searches</h3>
-    <ul id="recent-list"></ul>
-</div>
 
-            <!-- LOADING SPINNER -->
+            <!-- ========= RECENT SEARCHES ========= -->
+            <section class="recent-searches">
+                <h3>Recent Searches</h3>
+                <ul id="recent-list"></ul>
+            </section>
+
+            <!-- ========= COMPARE USERS ========= -->
+            <section class="compare-section">
+                <h3>Compare Two Users</h3>
+
+                <div class="compare-inputs">
+                    <input type="text" id="user1" placeholder="First username">
+                    <input type="text" id="user2" placeholder="Second username">
+                    <button id="compare-btn" class="btn-primary">Compare</button>
+                </div>
+
+                <div id="compare-result" class="compare-result"></div>
+            </section>
+
+            <!-- ========= LOADING ========= -->
             <div class="loading" id="loading">
                 <div class="spinner"></div>
                 <p>Fetching profile data...</p>
             </div>
 
-            <!-- PROFILE CARD (Will be filled by JavaScript) -->
-            <section class="profile-card" id="profile-card">
-                <!-- JavaScript will put content here -->
-            </section>
-    
-            <!-- THEME TOGGLE -->
+            <!-- ========= PROFILE CARD ========= -->
+            <section class="profile-card" id="profile-card"></section>
+
+            <!-- ========= THEME TOGGLE ========= -->
             <div class="theme-toggle">
                 <button id="theme-btn">
                     <span id="theme-icon">🌙</span>
@@ -65,17 +86,18 @@
         </div>
     </main>
 
-    <!-- FOOTER -->
+    <!-- ================= FOOTER ================= -->
     <footer class="footer">
-        <p>Built with ❤️ by [ M.V.K ] | 
-           <a href="https://github.com/yourusername/github-profile-card-generator" target="_blank">
-               View Source
-           </a>
-           <a href="..." target="_blank" rel="noopener noreferrer">
-
+        <p>
+            Built with ❤️ by <strong>M.V.K</strong> |
+            <a href="https://github.com/mvkrishna24/github-profile-card-generator" target="_blank">
+                View Source
+            </a>
         </p>
     </footer>
 
+    <!-- ================= SCRIPT ================= -->
     <script type="module" src="js/app.js"></script>
+
 </body>
 </html>

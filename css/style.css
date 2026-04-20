@@ -10,14 +10,14 @@
     --accent: #0366d6;
     --border: #e1e4e8;
     --shadow: rgba(0, 0, 0, 0.1);
-    
+
     /* Spacing */
     --spacing-xs: 0.5rem;
     --spacing-sm: 1rem;
     --spacing-md: 1.5rem;
     --spacing-lg: 2rem;
     --spacing-xl: 3rem;
-    
+
     /* Border Radius */
     --radius-sm: 6px;
     --radius-md: 12px;
@@ -34,6 +34,7 @@
     --border: #30363d;
     --shadow: rgba(0, 0, 0, 0.3);
 }
+
 /* ==========================================
    RESET & BASE STYLES
    ========================================== */
@@ -57,6 +58,7 @@ body {
     margin: 0 auto;
     padding: 0 var(--spacing-md);
 }
+
 /* ==========================================
    HEADER
    ========================================== */
@@ -76,6 +78,7 @@ body {
     color: var(--text-secondary);
     font-size: 1.1rem;
 }
+
 /* ==========================================
    SEARCH SECTION
    ========================================== */
@@ -131,6 +134,7 @@ body {
     font-size: 0.9rem;
     min-height: 1.5rem;
 }
+
 /* ==========================================
    LOADING SPINNER
    ========================================== */
@@ -155,8 +159,11 @@ body {
 }
 
 @keyframes spin {
-    to { transform: rotate(360deg); }
+    to {
+        transform: rotate(360deg);
+    }
 }
+
 /* ==========================================
    LOADING SPINNER
    ========================================== */
@@ -181,8 +188,11 @@ body {
 }
 
 @keyframes spin {
-    to { transform: rotate(360deg); }
+    to {
+        transform: rotate(360deg);
+    }
 }
+
 /* ==========================================
    THEME TOGGLE
    ========================================== */
@@ -208,6 +218,7 @@ body {
     border-color: var(--accent);
     transform: translateY(-2px);
 }
+
 /* RECENT SEARCHES */
 .recent-searches {
     margin-top: 20px;
@@ -238,6 +249,28 @@ body {
     color: white;
 }
 
+.compare-section {
+    margin-top: 30px;
+}
+
+.compare-section input {
+    margin: 5px;
+    padding: 8px;
+}
+
+#compare-result {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+}
+
+.profile-stats-extra {
+    margin-top: 15px;
+    padding: 10px;
+    border-top: 1px solid var(--border);
+}
+
 /* ==========================================
    FOOTER
    ========================================== */
@@ -256,6 +289,7 @@ body {
 .footer a:hover {
     text-decoration: underline;
 }
+
 /* ==========================================
    MOBILE RESPONSIVE
    ========================================== */
@@ -263,16 +297,16 @@ body {
     .header h1 {
         font-size: 2rem;
     }
-    
+
     .search-box {
         flex-direction: column;
     }
-    
+
     .profile-header {
         flex-direction: column;
         text-align: center;
     }
-    
+
     .profile-stats {
         grid-template-columns: 1fr;
     }
