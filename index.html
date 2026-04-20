@@ -21,9 +21,18 @@
 
     <!-- ================= HEADER ================= -->
     <header class="header">
-        <div class="container">
-            <h1>GitHub Profile Card Generator</h1>
-            <p>Create beautiful profile cards for any GitHub user</p>
+        <div class="container header-flex">
+
+            <div class="logo-title">
+                <img id="github-logo" src="assets/GitHub_Invertocat_Black.png" alt="GitHub Logo" class="logo">
+
+                <h1>GitHub Profile Card Generator</h1>
+            </div>
+
+            <p class="subtitle">
+                Create beautiful profile cards for any GitHub user
+            </p>
+
         </div>
     </header>
 
@@ -34,12 +43,8 @@
             <!-- ========= SEARCH ========= -->
             <section class="search-section">
                 <div class="search-box">
-                    <input 
-                        type="text" 
-                        id="username-input" 
-                        placeholder="Enter GitHub username (e.g., torvalds)"
-                        autocomplete="off"
-                    >
+                    <input type="text" id="username-input" placeholder="Enter GitHub username (e.g., torvalds)"
+                        autocomplete="off">
                     <button id="generate-btn" class="btn-primary">
                         Generate Card
                     </button>
@@ -100,4 +105,5 @@
     <script type="module" src="js/app.js"></script>
 
 </body>
+
 </html>
